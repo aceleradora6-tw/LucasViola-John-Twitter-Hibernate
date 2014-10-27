@@ -19,7 +19,7 @@ public class AdicaoMensagemTweet {
 		Session session = factory.openSession();
 		
 		Tweet tweet = new Tweet();
-		tweet.setMensagem("bla bla bla!");
+		tweet.setMensagem("jyrjytrjyrjt");
 		
 		Transaction tx = session.beginTransaction();
 		session.save(tweet);

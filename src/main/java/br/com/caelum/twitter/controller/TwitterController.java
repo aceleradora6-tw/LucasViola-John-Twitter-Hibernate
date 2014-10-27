@@ -1,5 +1,7 @@
 package br.com.caelum.twitter.controller;
 
+import java.util.ArrayList;
+
 import br.com.caelum.twitter.model.Tweet;
 import br.com.caelum.vraptor.Get;
 import br.com.caelum.vraptor.Resource;
@@ -15,8 +17,8 @@ public class TwitterController {
 	}
 	
 	@Get("/newsfeed")
-	public String newsfeed() {
-		return tweets.getMensagem();
+	public ArrayList<Tweet> newsfeed() {
+		return new ArrayList<Tweet>();
 	}
 
 }

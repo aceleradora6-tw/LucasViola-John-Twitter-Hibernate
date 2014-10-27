@@ -11,16 +11,17 @@ import br.com.caelum.vraptor.ioc.Component;
 public class Tweet {
 	
 	@Id @GeneratedValue
-	private int id;
+	private Long id;
 	private String mensagem;
+	
 	
 
 	
 	
-	public int getId() {
+	public Long getId() {
 		return id;
 	}
-	public void setId(int id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 	public String getMensagem() {
