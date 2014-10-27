@@ -7,6 +7,15 @@
 <title>Insert title here</title>
 </head>
 <body>
-	Waka waka!
+	
+	<h2>Tweets</h2>
+	
+	<ul>
+		<c:forEach items="${tweetsList}" var="tweet">
+			<li>${tweet.mensagem}</li>
+		</c:forEach>
+	</ul>
+	
+	
 </body>
 </html>
